@@ -1,0 +1,171 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{ragged2e}%for text aligning
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+\usepackage{hyperref}
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=black,
+}
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Reuben \textsc{Varghese}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+
+\begin{tabular}{rl}
+
+
+    \hspace{4cm} \Large \href{http://www.vit.ac.in/}{VIT University, Chennai}\\
+    \large \href{http://www.github.com/reubenvarghese1}{Github} \bullet
+    \Large \href{https://www.linkedin.com/in/reubenv1}{Linkedin} \bullet
+    \Large \href{mailto:reubnenvarghese1@gmail.com}{Email}\\
+    \centering+91 9790708970
+\end{tabular}
+
+
+%Section: Work Experience at the top
+\section{Work Experience}
+
+ \large{Programmer at \textsc{\href{http://www.technocratsrobotics.com/}{ Technocrats Robotics}\hspace{2cm} \emph{Jan 2016 - Current}}}
+ \begin{itemize}
+ \item\emph{Official VIT Robocon team }
+ \item\large{Coded for various components in the robot including for a auto self aligning line following robot using Cytron MD 10-C motor drivers and Cytron LSA-08 Line detecting sensor.Currently working on a robot for Robocon 2017. Was also the head of the Computer Science department .}
+  \end{itemize}\\
+
+%Section: Education
+\section{Education}
+
+\renewcommand\labelitemii{$\textbullet $}
+
+ \large{\textsc{\href{http://www.vit.ac.in/}{Vellore Institute Of Technology, Chennai}\hspace{2cm} \emph{Jan 2016 - Current}}}
+  \begin{itemize}
+\item \emph{Bachelor of Technology (B.Tech.) in Computer Science }
+\begin{itemize}
+ \item \large{Cumulative GPA (after 3 semesters): 8.47/10.00}
+\end{itemize}
+\end{itemize}
+
+%Section: Projects
+\section{Projects}
+\renewcommand\labelitemii{$\textbullet $}
+
+ \large{\textsc\emph{{\href{https://github.com/reubenvarghese1/VIT-Research-Portal}{VIT Research Portal}}\hspace{6.5cm} \emph{July 2016 - Current}}}
+  \begin{itemize}
+\item \emph{A hub where all VIT Research papers will be uploaded.}
+\item \emph{Implemented using PHP ,Materialize CSS Framework, MySql for database creation and access.}
+
+\end{itemize}
+
+ \large{\textsc\emph{{\href{https://github.com/reubenvarghese1/PlacementApp}{VOLOC Placement App}}\hspace{6cm} \emph{Sept 2016 - Current}}}
+  \begin{itemize}
+\item \emph{VIT Chennai's Official Placement app}
+\item \emph{Currently working on Front end design and data fetching along with 3 
+\\Android developers}
+\item \emph{This app is being created so that the user is up to date with the ongoing placement activities in VIT Chennai}
+\item \emph{Implements methods from Volley Library for json parsing and inflation of list items received from server in the app.}
+
+\end{itemize}
+
+ \large{\textsc\emph{{\href{https://github.com/reubenvarghese1/Pitch}{PITCH Android App}\hspace{7cm} \emph{Oct 2016 - Current}}}
+  \begin{itemize}
+\item \emph{Got an event to organize? Use Pitch to publicize your app by using the inbuilt templates.The thereby produced app will then generate a child app which can be shared.}
+\item \emph{Currently working on Front end design along with 3 other Android Developers.}
+
+\end{itemize}
+\newpage
+ \large{\textsc\emph{{Home automation using Arest cloud\hspace{4cm}\emph{July 2016 - Current}}}
+  \begin{itemize}
+\item \emph{Controlling of home appliances from anywhere using Adafruit HUZZAH Esp8266(In built wifi module and microcontroller) for connecting to arest cloud and transmitting data and Relay for controlling the appliance.}
+\end{itemize}
+
+%Section: Languages
+\section{Languages}
+\begin{tabular}{rl}
+\textsc{English:}&Fluent\\
+\textsc{Hindi:}&Fluent\\
+\textsc{Malayalam:}&Mothertongue\\
+\end{tabular}
+
+\section{Skills}
+
+ \textsc{PHP}, \textsc{html}, \textsc{CSS3}, \textsc{Javascript}, \textsc{Arduino}, \textsc{Python}, \textsc{C/C++},{\fb \LaTeX}, my\textsc{sql}, 
+\textsc{sqlPlus},\textsc{Microsoft Azure}
+\item\textsc{Currently working on Ubuntu Gnome 16.04 for development.
+\item Worked on Intel Edison using nodeJs and used the data collected from sensor to visualize it in Microsoft Azure.}
+
+\section{Interests }
+Technology, Open-Source, Programming\\
+
+\end{document}
+
+\section{Achievements and Activities}
+\item\textsc{Was State 2nd and district 1st in DSO badmintonm tournmament,Mumbai.}
+\item\textsc{Part of the Literature Society of VIT and also part of the Music club}}
