@@ -151,21 +151,21 @@ ItalicFont = Fontin-Italic.otf
 \begin{tabular}{rl}
 \textsc{English:}&Fluent\\
 \textsc{Hindi:}&Fluent\\
-\textsc{Malayalam:}&Mothertongue\\
 \end{tabular}
 
 \section{Skills}
 
- \textsc{PHP}, \textsc{html}, \textsc{CSS3}, \textsc{Javascript}, \textsc{Arduino}, \textsc{Python}, \textsc{C/C++},{\fb \LaTeX}, my\textsc{sql}, 
-\textsc{sqlPlus},\textsc{Microsoft Azure}
+ \textsc{PHP}, \textsc{html}, \textsc{CSS3}, \textsc{Javascript}, \textsc{Arduino}, \textsc{Python}, \textsc{C/C++},{\large\fb \LaTeX}, My\textsc{SQL}, 
+\textsc{SQL *PLUS},\textsc{Microsoft Azure}
 \item\textsc{Currently working on Ubuntu Gnome 16.04 for development.
-\item Worked on Intel Edison using nodeJs and used the data collected from sensor to visualize it in Microsoft Azure.}
+\item Worked on Intel Edison using nodeJs and used the data collected from sensors and visualized it in the form of a graph in Microsoft Azure.}
 
-\section{Interests }
-Technology, Open-Source, Programming\\
-
-\end{document}
 
 \section{Achievements and Activities}
 \item\textsc{Was State 2nd and district 1st in DSO badmintonm tournmament,Mumbai.}
-\item\textsc{Part of the Literature Society of VIT and also part of the Music club}}
+\item\textsc{Part of the Literature Society of VIT and also part of the Music club}
+
+\section{Interests }
+Web Development,Android OS,Android app development, Open-Source, \\
+Badminton,Music
+\end{document}
